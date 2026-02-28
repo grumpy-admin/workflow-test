@@ -34,3 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Get to know something about the runner
+      - name: Run a random command
+        run: cat /etc/os-release
