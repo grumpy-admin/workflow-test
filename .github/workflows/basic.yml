@@ -38,3 +38,10 @@ jobs:
       # Get to know something about the runner
       - name: Run a random command
         run: cat /etc/os-release
+
+  DoStuff:
+    runs-on: debian-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get latest commit message
+        run: git show -s --format=%s
